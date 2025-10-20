@@ -6,7 +6,7 @@ const Home = () => {
 
   useEffect(() => {
     const getData = async () => {
-          const response = await axios.get("https://mern-back-ytjl.onrender.com/")
+          const response = await axios.get("https://mern-back-ytjl.onrender.com/users")
           setUsers(response.data)
           console.log(response.data);
 
