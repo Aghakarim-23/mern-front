@@ -18,7 +18,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5001/register", formData);
+      await axios.post("https://mern-back-ytjl.onrender.com/register", formData);
       setFormData({
         username: "",
         email: "",
